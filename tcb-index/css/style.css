@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/*
+    use this url for better footer:      https://codepen.io/chrisdothtml/pen/azPYqq
+*/
+
+
+/* basic page intro------------------------------- */
+html,
+body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', cursive;
+    color: #d5d5d5;
+}
+
+/*==============================================================*/
+
+/* here is the navbar menu css ----------------------------- */
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9em;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, .6);
+}
+
+.navbar-nav li {
+    padding-right: .5rem;
+}
+
+.navbar-dark .navbar-nav .navbar-link {
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark.navbar-nav.navbar-link:hover {
+    color: #1ebba3;
+}
+
+.bar {
+    background-color: gold;
+    background-image: linear-gradient(gold, yellow);
+    padding-top: 12px;
+    padding-bottom: 5px;
+}
+
+/*============================================================*/
+
+
+/* here is the first page css---------------------------------*/
+
+.header {
+    padding-top: 160px;
+    padding-bottom: 200px;
+    background-image: url(../img/sky.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 60px;
+    color: #ddd;
+    font-weight: 100;
+    margin-bottom: 10px;
+    animation-name: moveToLeft;
+    animation-duration: 2s;
+}
+
+.banner p,
+h4 {
+    font-size: 20px;
+    font-weight: 100;
+    color: #eee;
+    margin-top: 20px;
+    /*animation-name: moveToRight;
+    animation-duration: 2s;*/
+    animation: moveToRight 2s;
+}
+
+.banner a,
+small {
+    width: 250px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 18px;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    animation-name: animateBtn;
+    animation-duration: 3s;
+}
+
+.header .col-md-6 img {
+    width: 100%;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    animation-name: animateBtn;
+    animation-duration: 4s;
+}
+
+/* animation part of the words */
+@keyframes moveToLeft {
+    from
+
+    /*0%*/
+        {
+        transform: translateX(120px);
+        opacity: 0;
+    }
+
+    to
+
+    /*100%*/
+        {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveToRight {
+    from
+
+    /*0%*/
+        {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+
+    to
+
+    /*100%*/
+        {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animateBtn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*============================================================*/
+
+/* here is the main section first page css file ------------- */
+.main-site .bar- {
+    padding-bottom: 130px;
+    padding-left: 10px;
+}
+
+.bar- .row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bar- .row .abc {
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.bar-.row .abc h1 {
+    padding-bottom: 20px;
+}
+
+/*============================================================*/
+
+/* here starts the second section that is section-2 ---------------------- */
+.section-2 {
+    padding-bottom: 50px;
+}
+
+.section-2 .container .row .services-title .title-text {
+    padding-bottom: 10px;
+}
+
+.card {
+    padding-top: 20px;
+}
+
+.card .btn {
+    margin-left: 40px;
+}
+
+/*===============================================================*/
+
+/*here starts the third section that is page ---------------------*/
+.section-9 {
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+/*================================================================*/
+
+/* here is the page section which is for getting more about us -------------- */
+
+.page {
+    padding-left: 5px;
+    background-color: #010101;
+    -webkit-text-fill-color: cornsilk;
+    padding-top: 50px;
+}
+
+.page .img-caption .btn {
+    border-radius: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.img-caption h6 {
+    margin-bottom: 40px;
+}
+
+.img-caption {
+    padding-left: 30px;
+}
+
+/*====================================================================*/
+
+/* here all the edited font awesome which is required to have edited 
+and footer editing is here --------------------------- */
+footer {
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+    background: linear-gradient(59deg, #3A6073, #16222A);
+    color: white;
+    margin-top: 100px;
+    padding-top: 30px;
+}
+
+footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+footer.container p,
+h4,
+h2,
+h6 {
+    -webkit-text-fill-color: blanchedalmond;
+}
+
+footer a:hover {
+    color: #FA944B;
+    text-decoration: none;
+}
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+    padding-left: 2px;
+    margin-left: 10px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #00acee;
+}
+
+.social-network a.icoYoutube:hover {
+    background-color: #c4302b;
+}
+
+.social-network a.icoInstagram:hover {
+    background-color: #3f729b;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoYoutube:hover i,
+.social-network a.icoInstagram:hover i {
+    color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.social-network a {
+    background-color: #F9F9F9;
+}
+
+.social a {
+    font-size: 20px;
+    padding: 25px;
+}
+
+.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.light- {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+}
+
+/*=================== footer editing ends here =======================*/
+
+
+/* here is css of section-3 starts -----------------------------------*/
+.section-3 .container .row p::before {
+    padding-left: 10px;
+    color: green;
+    /* green color left--------------------- */
+}
+
+.section-3 {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+/*section-3 ends here=================================================*/
+
+/*  -------------------------------------------- */
+.padding {
+    padding-bottom: 40px;
+
+}
+
+.container {
+    padding-top: 30px;
+}
+
+.container h1 {
+    padding-top: 110px;
+    text-shadow: #d5d5d5;
+}
+
+.container p {
+    padding-top: 10px;
+}
+
+/*======================================================================*/
+
+
+/*here is the body css*/
+.trygradient {
+    background-color: #f7f7f7;
+    -webkit-text-fill-color: #222;
+    font-family: 'Roboto', cursive;
+}
+
+/*=====end of the body css===============================================*/
+
+.navbar .col-md-6 .form-inline {
+    margin-left: 400px;
+    display: inline;
+}
+
+
+.container .form-inline {
+    display: inline;
+    padding-left: 10px;
+    align-items: "center";
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+/*here the vertical line in menu ------------------------------------- */
+.vl {
+    border-left: 2px solid #d5d5d5;
+    height: 50%;
+    position: absolute;
+    left: 82.5%;
+    margin-left: 3px;
+    top: 25%;
+}
+
+.btn {
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+/*==================================================================*/
+
+
+/* here about the col class--------------------------- */
+[class="col-"] {
+    padding: 90px;
+}
+
+/*=====here it ends================================== */
+
+
+
+
+/* here is the css for making webpage responsive page ------------ */
+@media(min-width:992px) {
+
+    body,
+    html {
+        height: 100%;
+        width: 100%;
+    }
+
+    .vl {
+        left: 82.4%;
+    }
+
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .section-9.container .row {
+        margin-bottom: 20px;
+    }
+
+    ul.social-network li {
+        display: inline;
+        margin: 0 2px;
+        padding-left: 0px;
+        margin-left: 2px;
+    }
+
+}
+
+@media(min-width:768px) and (max-width:991px) {
+
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .section-3 {
+        padding-bottom: 20px;
+    }
+
+    .section-9.container .row {
+        margin-bottom: 20px;
+    }
+
+    .vl {
+        left: 75.5%;
+    }
+
+    ul.social-network li {
+        display: inline;
+        margin: 0 0px;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+}
+
+/* here we stop and time to sleep due to battery low of laptop ---------------- */
+@media(min-width:575px) and (max-width:767px) {
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .section-3 {
+        padding-bottom: 12px;
+    }
+
+    .section-9.container .row {
+        margin-bottom: 12px;
+    }
+
+    .vl {
+        border-left: 0px solid #d5d5d5;
+        height: 50%;
+        position: absolute;
+        left: 25%;
+        margin-left: 3px;
+        top: 25%;
+    }
+
+    ul.social-network li {
+        display: inline;
+        margin: 0 2px;
+        padding-left: 15px;
+        margin-left: 47px;
+    }
+}
+
+@media (min-width:480px) and (max-width:574px) {
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .section-3 {
+        padding-bottom: 12px;
+    }
+
+    .section-9.container .row {
+        margin-bottom: 12px;
+    }
+
+    .vl {
+        border-left: 0px solid #d5d5d5;
+        height: 50%;
+        position: absolute;
+        left: 25%;
+        margin-left: 3px;
+        top: 25%;
+    }
+
+    ul.social-network li {
+        display: inline;
+        margin: 0 2px;
+        padding-left: 15px;
+        margin-left: 47px;
+    }
+}
+
+/* here is completes the css work==================*/
+
+/*here is the extra part for above 479px screen of mobile if it is required ===================== */
+/*
+@media (max-width: 479px) {
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .section-3 {
+        padding-bottom: 12px;
+    }
+
+    .section-9.container .row {
+        margin-bottom: 12px;
+    }
+
+    .vl {
+        border-left: 0px solid #d5d5d5;
+        height: 50%;
+        position: absolute;
+        left: 25%;
+        margin-left: 3px;
+        top: 25%;
+    }
+
+    ul.social-network li {
+        display: inline;
+        margin: 0 2px;
+        padding-left: 37px;
+        margin-left: 20px;
+    }
+}
+/*
+/* here the work done by me as in incharge of The Cloud Bill index page*/
